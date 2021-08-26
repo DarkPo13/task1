@@ -1,8 +1,9 @@
-
-
 function combinatoricsChallenge(num) {
-  console.log(num);
+  n = num[0].value;
   const result = document.querySelector('input[name="result"]');
-
-  result.value = (5*num[0].value**2-5*num[0].value+2)/2;
+  if (n < 0) {
+    result.value = "Only integer!";
+  } else {
+    result.value = (5 * n ** 2 - 5 * n + 2) / 2;
+  }
 }
